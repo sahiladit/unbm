@@ -38,10 +38,16 @@ export default function Navbar() {
             <i className="fa-solid fa-magnifying-glass"></i>
             <span>Search</span>
           </div>
-          <div className="flex items-center gap-3">
-            <i className="fa-solid fa-user"></i>
-            <span>Login</span>
-          </div>
+          <Router>
+            <Routes>
+              <Router path="/Register" >
+              <div className="flex items-center gap-3">
+              <i className="fa-solid fa-user"></i>
+              <span>Signin</span>
+              </div>
+          </Router>
+          </Routes>
+        </Router>
         </div>
       </div>
 
